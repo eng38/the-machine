@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel = "stylesheet"
+    href = "css/reset.css" />
+    <link rel = "stylesheet"
+    href = "css/index.css" />
+  </head>
+  <body>
+    <!--svg start-->
+    <svg width="500" height="500">
+      <!--animate: putter smoke-->
+      <g id="smoke">
+        <circle cx="375" cy="350" r="10" fill="white" stroke="gray" stroke-width="3"/>
+      </g>
+      <!--gun body-->
+      <rect x="120" y="200" width="330" height="80" fill="white" stroke="black" stroke-width="1"/>
+      <rect x="122" y="200" width="78" height="77" fill="white" stroke="black" stroke-width="1"/>
+      <circle cx="160" cy="238" r="33" fill="white" stroke="black" stroke-width="1"/>
+      <circle cx="158" cy="238" r="30" fill="black" stroke="black" stroke-width="1"/>
+      <!--arm-->
+      <rect x="280" y="295" width="80" height="20" fill="white" stroke="black" stroke-width="2"/>
+      <!--jetpack-->
+      <rect x="350" y="280" width="40" height="80" rx="19" ry="10" fill="white" stroke="black" stroke-width="2"/>
+      <rect x="350" y="340" width="40" height="20" fill="white" stroke="black" stroke-width="2"/>
+      <!--torso-->
+      <rect x="320" y="260" width="40" height="110" rx="19" ry="8" fill="white" stroke="black" stroke-width="2"/>
+      <!--gun arm-->
+      <rect x="280" y="280" width="20" height="50" fill="white" stroke="black" stroke-width="1"/>
+      <!--fingers-->
+      <rect x="274" y="290" width="15" height="10" fill="white" stroke="black" stroke-width="2"/>
+      <rect x="276" y="300" width="15" height="10" fill="white" stroke="black" stroke-width="2"/>
+      <rect x="275" y="310" width="15" height="10" fill="white" stroke="black" stroke-width="2"/>
+
+      <!--animate: antenna-->
+      <g id="antenna">
+        <rect x="345" y="120" width="4" height="70" rx="3" ry="80" fill="white" stroke="black" stroke-width="1"/>
+        <circle cx="348" cy="118" r="9" fill="white" stroke="black" stroke-width="2"/>
+      </g>
+      <!--head-->
+      <circle cx="335" cy="225" r="50" fill="white" stroke="black" stroke-width="2"/>
+      <!--visor-->
+      <rect x="280" y="205" width="100" height="40" rx="3" ry="3" fill="white" stroke="black" stroke-width="2"/>
+      <rect x="284" y="209" width="92" height="32" rx="3" ry="3" stroke="black" stroke-width="1"/>
+
+      <!--animate: visor eye-->
+      <g id="eye">
+        <circle cx="360" cy="225" r="6" fill="red"/>
+      </g>
+      <!--animate: cannonball: start offscreen-->
+      <g id="shot">
+        <circle cx="158" cy="238" r="30" fill="brown" stroke="black" stroke-width="1"/>
+      </g>
+      <!--animate: eye laser-->
+      <g id="laser">
+        <rect x="284" y="210" width="92" height="2" rx="3" ry="3" fill="red"/>
+      </g>
+    </svg>
+    <section id="buttons">
+      <fieldset>
+        <legend>Animate</legend>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </fieldset>
+    </section>
+  </body>
+  <!--Initiating script after the page assets are fully loaded to prevent breaking.-->
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,61 @@
+#antenna, #eye, #shot, #smoke, #laser{
+  transform-origin: center;
+}
+
+/*antenna - rotate scale*/
+.animateAntenna{
+  animation: waveAntenna 5s ease infinite;
+}
+@keyframes waveAntenna{
+  30% {transform: rotate(-5deg) scale(0.9);}
+  40% {transform: rotate(10deg) scale(1);}
+  70% {transform: rotate(5deg) scale(1.1);}
+  70% {transform: rotate(0) scale(1);}
+}
+/*eye - translate scale*/
+.animateEye{
+  animation: eyeZoom 2s ease infinite;
+}
+@keyframes eyeZoom {
+  25% {transform: translateX(-160px) scaleX(2.2)}
+  50% {transform: translateX(-60px) scaleX(1.0);}
+  75% {transform: translateX(-140px) scaleX(2.2);}
+  100% {transform: translateX(0px) scaleX(1.0);}
+}
+/*cannonball - scale translate (minor opacity for exiting weapon)*/
+.animateShot{
+  animation: shotExplode 2s ease infinite;
+}
+@keyframes shotExplode {
+  0% {opacity: 0;}
+  1% {opacity: 1;}
+  100% {transform: scale(3.0) translateX(-200px); {opacity: 1;}}
+}
+/*jetpack smoke - translate opacity*/
+.animateSmoke{
+  animation: putterSmoke 1.6s ease infinite;
+  transform: scale(0.2);
+}
+@keyframes putterSmoke {
+  0% {transform:translate(0,0);}
+  10% {transform:translate(0,15px);}
+  30% {transform:translate(8px, 35px); opacity: 0.8;}
+  60% {transform:translate(10px, 65px); opacity: 0.5;}
+  100% {transform:translate(20px, 85px);  opacity: 0;}
+}
+/*visor scan laser - translate opacity*/
+.animateLaser{
+  animation: laserBeams 5s linear infinite;
+}
+@keyframes laserBeams {
+  25% {opacity: 0;}
+  50% {transform: translateY(30px); opacity: 1;}
+  75% {opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
+}
+
+/*------------------------*/
+fieldset{
+  display: block;
+  text-align: center;
+}

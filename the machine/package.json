@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "EN",
+  "license": "ISC",
+  "description": ""
+}
